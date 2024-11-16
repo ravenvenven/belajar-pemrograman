@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Pemrograman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Belajar pemrograman</h1>
+            <header>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#tutorials">Tutorial</a></li>
+                        <li><a href="#examples">Contoh</a></li>
+                        <li><a href="#practice">Latihan</a></li>
+                        <li><a href="#contact">kontak</a></li>
+                    </ul>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di BelajarKode pemrograman</h2>
+            <p>Platform ini dirancang untuk membantu Anda mempelajari berbagai bahasa pemrograman dengan cara yang mudah dan interaktif.</p>
+        </section>
+
+        <section id="tutorials">
+            <h2>Tutorial Pemrograman</h2>
+            <div class="tutorial-list">
+                <div class="tutorial-card" onclick="loadTutorial('Python')">
+                    <h3>Python</h3>
+                    <p>Bahasa pemrograman serbaguna yang populer untuk pemula.</p>
+                </div>
+                <div class="tutorial-card" onclick="loadTutorial('JavaScript')">
+                    <h3>JavaScript</h3>
+                    <p>Bahasa utama untuk pengembangan web interaktif.</p>
+                </div>
+                <div class="tutorial-card" onclick="loadTutorial('HTML')">
+                    <h3>HTML</h3>
+                    <p>Bahasa markup dasar untuk membangun halaman web.</p>
+                </div>
+                <div class="tutorial-card" onclick="loadTutorial('CSS')">
+                    <h3>CSS</h3>
+                    <p>Digunakan untuk menata dan membuat halaman web menarik.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="examples">
+            <h2>Contoh Kode</h2>
+            <div id="code-container">
+                <p>Pilih bahasa di bagian tutorial untuk melihat contoh kode.</p>
+            </div>
+        </section>
+
+        <section id="practice">
+            <h2>Latihan</h2>
+            <p>Coba praktekkan kode Anda di bawah ini:</p>
+            <textarea id="code-editor" placeholder="Tulis kode Anda di sini..."></textarea>
+            <button onclick="runCode()">Jalankan</button>
+            <div id="output-container">
+                <h3>Output:</h3>
+                <iframe id="output"></iframe>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
